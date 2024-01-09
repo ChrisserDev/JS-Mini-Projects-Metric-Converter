@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(textureImg.jpg);
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header, .conversion-container{
+    width: 40%;
+    height: 40%;
+    border: 2px solid #f6f2f2;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    background-color: #6943FF;
+    padding: 2em;
+}
+
+.conversion-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 40%;
+    background-color: #f6f2f2;
+    color: #5A537B;
+}
+
+#convert-btn, #input-value{
+    text-align: center;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+}
+
+#convert-btn{
+    padding: .5em 1em;
+    color: #5A537B;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 20%;
+}
+
+#convert-btn:hover{
+    background-color: #6943FF;
+    color: white;
+    border: 1px solid white;
+}
+
+#input-value{
+    padding: 1.5em .2em;
+    width: 15%;
+}
+
+.length-box, .volume-box, .mass-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFF;
+    text-align: center;
+    width: 80%;
+    height: 20%;
+    border-radius: 5px;
+}
+
+#meter-result, #volume-result, #mass-result{
+    margin-top: .5em;
+}
+
+#input-required{
+    display: none;
+    position: absolute;
+    top: 20%;
+    font-size: 1.2rem;
+    color: #FFFF;
+    background: rgb(214, 25, 25);
+    border-radius: 5px;
+    padding: .5em .8em;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 426px){
+    .header, .conversion-container{
+        width: 85%;
+    }
+
+    .header{
+        gap: 20px;
+        height: 40%;
+    }
+
+    .conversion-container{
+        height: 55%;
+    }
+
+    h1{
+        font-size: 1.3rem;
+    }
+
+    #convert-btn{
+        width: 35%;
+        font-size: .8rem;
+    }
+
+    .length-box, .volume-box, .mass-box{
+        height: 20%;
+        margin: 1em 0;
+        font-size: .8rem;
+    }
+
+    #input-required{
+        top: 35%;
+        font-size: .8rem;
+    }
+}
