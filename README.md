@@ -27,10 +27,14 @@ Grabbing the elements using the DOM method, this fetches various HTML elements a
   convertBtn: The button that triggers the conversion process.
   meterResult, volumeResult, massResult: Paragraph elements where the conversion results are displayed.
   warning: A paragraph element for displaying a warning message.
+  
+![image](https://github.com/ChrisserDev/Mini-JS-Projects-Metric-Converter/assets/126911205/84ce9a7c-6aa4-4f4a-873a-14bb8931d4c0)
  
 ### 2. Initializing Variables:
  
 These constants represent conversion factors for length, volume, and mass conversions. They are used in the conversion calculations.
+
+![image](https://github.com/ChrisserDev/Mini-JS-Projects-Metric-Converter/assets/126911205/e4ed78b0-f625-42e7-bfd3-ea38bc70c800)
 
 ### 3. handleClicks Function
 This function is executed when the conversion button is clicked. It performs the following tasks:
@@ -42,7 +46,11 @@ This function is executed when the conversion button is clicked. It performs the
   Updates the content of the HTML elements (meterResult, volumeResult, massResult) to display the calculated results.
   
   If no value is entered (baseValue is falsy), it displays a warning message (warning) for 2 seconds using setTimeout.
+  
+![image](https://github.com/ChrisserDev/Mini-JS-Projects-Metric-Converter/assets/126911205/6cf373da-1fad-4c75-85aa-d1e7b1c1fc27)
  
 ### 4. Event Listener:
 
 This line adds an event listener to the "Convert" button (convertBtn). It listens for a click event, and when the button is clicked, it triggers the handleClicks function, initiating the conversion process.
+
+![image](https://github.com/ChrisserDev/Mini-JS-Projects-Metric-Converter/assets/126911205/47b6e69b-5f48-4a8a-9f7e-d2da7524ed0e)
