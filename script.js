@@ -26,9 +26,9 @@ function handleClicks(){
     const kilosResult = (baseValue / kiloToPound).toFixed(3);
 
     
-    meterResult.textContent = `${baseValue} meters = ${feetResult} feet | ${baseValue} feet = ${metersResult}`;
-    volumeResult.textContent = `${baseValue} liters = ${gallonsResult} gallons | ${baseValue} gallons = ${litersResult}`;
-    massResult.textContent = `${baseValue} kilos = ${poundsResult} pounds | ${baseValue} pounds = ${kilosResult}`;
+    meterResult.textContent = `${baseValue} meters = ${feetResult} feet | ${baseValue} feet = ${metersResult} meters`;
+    volumeResult.textContent = `${baseValue} liters = ${gallonsResult} gallons | ${baseValue} gallons = ${litersResult} liters`;
+    massResult.textContent = `${baseValue} kilos = ${poundsResult} pounds | ${baseValue} pounds = ${kilosResult} kilos`;
 
     if(!baseValue){
         warning.style.display = "block"; 
